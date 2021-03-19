@@ -46,5 +46,5 @@ $("#15 .description").val(localStorage.getItem("15"));
 $("#16 .description").val(localStorage.getItem("16"));
 $("#17 .description").val(localStorage.getItem("17"));
 $("#18 .description").val(localStorage.getItem("18"));
-$("#19 .description").val(localStorage.getItem("17"));
-$("#20 .description").val(localStorage.getItem("18"));
+$("#19 .description").val(localStorage.getItem("19"));
+$("#20 .description").val(localStorage.getItem("20"));
