@@ -14,31 +14,23 @@ $(".saveBtn").click(function () {
 
 // Changing the style depending of the time
 $(".time-block").each(function () {
-  //Need to get the id for that time-block you are looking at in each instance
-  var timeActivityBlock = $(this).attr("id");
-  // console.log(timeActivityBlock);
 
-  //var hour = now.getHours();
+  var timeActivityBlock = $(this).attr("id");
   var currentHour = moment().format("HH");
-  // console.log(currentHour);
   $(this).switchClass("time-block", "past");
 
-  //Then use an if statement to check this against the 'hour' variables
-
-  //IF its less then add a class or past
+  //If its less then add a class or past
   if (timeActivityBlock < currentHour) {
     // console.log("PAST");
     $(this).switchClass("time-block", "past");
 
     //if its equal add a class of present
-  }
-  if (timeActivityBlock === currentHour) {
+  } if (timeActivityBlock === currentHour) {
     // console.log("PRESENT");
     $(this).switchClass("time-block", "present");
 
     //if its future add a class of future
-  }
-  if (timeActivityBlock > currentHour) {
+  } if (timeActivityBlock > currentHour) {
     // console.log("FUTURE");
     $(this).switchClass("time-block", "future");
   }
