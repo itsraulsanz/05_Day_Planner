@@ -16,6 +16,19 @@ $(".saveBtn").click(function() {
  
 });
 
+
+$('.time-block').each(function(){
+    //Need to get the id for that time-block you are looking at in each instance
+
+    //Then use an if statement to check this against the 'hour' variables
+
+    //IF its less then add a class or past
+
+    //if its equal add a class of present
+
+    //if its future add a class of future
+})
+
 $('#9 .description').val(localStorage.getItem('9'));
 $('#10 .description').val(localStorage.getItem('10'));
 $('#11 .description').val(localStorage.getItem('11'));
